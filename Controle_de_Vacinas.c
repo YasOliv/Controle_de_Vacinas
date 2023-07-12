@@ -19,18 +19,18 @@ int main(){
 	 char cpf [30];
 	 quantidade = 0;
 	 while (op !=4){
-	 		printf("MENU DE OPÇÕES\n");
+	 		printf("MENU DE OPÃ‡Ã•ES\n");
 		 	printf(" \n");
 		 	printf("1 - Cadastrar vacina\n");
-		 	printf("2 - Listar aplicações\n");
+		 	printf("2 - Listar aplicaÃ§Ãµes\n");
 		 	printf("3 - Consultar por CPF\n");
 		 	printf("4 - Sair\n");
-		 	printf("Digite a opção desejada: ");
+		 	printf("Digite a opÃ§Ã£o desejada: ");
 		 	scanf("%d", &op);
 		 	fflush(stdin);
 		 	if(op == 1){
 		 		system ("cls");
-			 	printf("OPÇÃO 1\n");
+			 	printf("OPÃ‡ÃƒO 1\n");
 			 	printf("CADASTRAR DADOS\n");
 			 	printf(" \n");
 			 	printf("Digite o nome do paciente: ");
@@ -42,10 +42,10 @@ int main(){
 			 	printf("Digite o nome da vacina: ");
 			 	scanf("%s", &aplicacoes[quantidade].vacina);
 			 	fflush(stdin);
-			 	printf("Digite a data de aplicação: ");
+			 	printf("Digite a data de aplicaÃ§Ã£o: ");
 			 	scanf("%s", &aplicacoes[quantidade].data);
 			 	fflush(stdin);
-			 	printf("Digite o número do lote: ");
+			 	printf("Digite o nÃºmero do lote: ");
 			 	scanf("%s", &aplicacoes[quantidade].lote);
 			 	printf(" \n");
 			 	printf("\nDADOS CADASTRADOS COM SUCESSO\n");
@@ -56,10 +56,10 @@ int main(){
 			 else{
 			 	if(op == 2){
 			 	 	system("cls");
-			 	 	printf("OPÇÃO 2\n");
-			 		printf("APLICAÇÕES CADASTRADAS:\n");
+			 	 	printf("OPÃ‡ÃƒO 2\n");
+			 		printf("APLICAÃ‡Ã•ES CADASTRADAS:\n");
 			 		for (i=0; i<quantidade; i++){
-			 			printf("CÓDIGO: %d\n", i);
+			 			printf("CÃ“DIGO: %d\n", i);
 					 	printf("NOME: %s\n", aplicacoes[i].nome);
 					 	printf("CPF: %s\n", aplicacoes[i].cpf);
 					 	printf("VACINA: %s\n", aplicacoes[i].vacina);
@@ -74,7 +74,7 @@ int main(){
 					 		consulta=0;
 						 	i=0;
 						 	system("cls");
-						 	printf("OPÇÃO 3\n");
+						 	printf("OPÃ‡ÃƒO 3\n");
 						 	printf("CONSULTAR POR CPF\n");
 						 	printf("Digite o CPF que deseja buscar: ");
 						 	scanf ("%s", &cpf);
@@ -89,7 +89,7 @@ int main(){
 							 }
 							 if (consulta == 1){
 							 	printf("\nCPF ENCONTRADO!\n");
-							 	printf("CÓDIGO: %d\n", i);
+							 	printf("CÃ“DIGO: %d\n", i);
 							 	printf("NOME: %s\n", aplicacoes[i].nome);
 							 	printf("CPF: %s\n", aplicacoes[i].cpf);
 							 	printf("VACINA: %s\n", aplicacoes[i].vacina);
@@ -97,12 +97,12 @@ int main(){
 							 	printf("LOTE: %s\n", aplicacoes[i].lote);
 							 }
 							 else{
-							 	printf("\nCPF NÃO ENCONTRADO!\n");
+							 	printf("\nCPF NÃƒO ENCONTRADO!\n");
 							 }
 						 }
 						 if (op ==4){
 						 	system("cls");
-							printf("OPÇÃO 4: SAIR\n\n");
+							printf("OPÃ‡ÃƒO 4: SAIR\n\n");
 							printf("O sistema foi finalizado!");
 						 }
 					 }
